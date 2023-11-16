@@ -3,24 +3,29 @@
 An Artificial Neural Network (ANN) for breast cancer classification is a machine learning model designed to analyze features of breast cancer data and predict whether a given tumor is malignant (cancerous) or benign (non-cancerous). Here's a general description of an ANN for breast cancer classification:
 
 ## Architecture:
-# Input Layer:
+### Input Layer:
 
-Nodes: One node for each feature in the dataset (e.g., characteristics of cell nuclei).
-Purpose: Takes input features representing characteristics of tumors.
-Hidden Layers:
+1.Nodes: One node for each feature in the dataset (e.g., characteristics of cell nuclei).
+2.Purpose: Takes input features representing characteristics of tumors.
 
-Nodes: Multiple layers with varying numbers of nodes/neurons.
-Purpose: Extracts and learns hierarchical representations from input features.
-Output Layer:
+### Hidden Layers:
 
-Nodes: One node for binary classification (malignant or benign).
-Activation Function: Typically sigmoid, representing the probability of the tumor being malignant.
-Purpose: Produces the final prediction for the tumor class.
-Training:
-Loss Function:
+1. Nodes: Multiple layers with varying numbers of nodes/neurons.
+2. Purpose: Extracts and learns hierarchical representations from input features.
+   
+### Output Layer:
 
-sparse_categorical_crossentropy : is a loss function used in neural network models, especially for multi-class classification problems where the target labels are integers (class indices). This loss function is suitable when the target variable is not one-hot encoded, meaning each sample is assigned an integer label representing its class.
-Optimizer:
+1. Nodes: One node for binary classification (malignant or benign).
+2. Activation Function: Typically sigmoid, representing the probability of the tumor being malignant.
+3. Purpose: Produces the final prediction for the tumor class.
+
+## Training:
+
+### Loss Function:
+
+1.sparse_categorical_crossentropy : is a loss function used in neural network models, especially for multi-class classification problems where the target labels are integers (class indices). This loss function is suitable when the target variable is not one-hot encoded, meaning each sample is assigned an integer label representing its class.
+
+### Optimizer:
 
 Adam, SGD, or others: Optimizes the network's weights based on the chosen loss function.
 Metrics:
